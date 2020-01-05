@@ -41,6 +41,19 @@ a{
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
+
+#aboutlink.in:after{
+    background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 4px;
+  left: 0;
+  position: absolute;
+  background: rgb(98, 0, 196);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 100%;
+}
 #aboutlink:hover
 {
     text-decoration: none;
@@ -70,6 +83,18 @@ a{
   background: rgb(98, 0, 196);
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
+}
+#faqlink.in:after{
+    background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 4px;
+  left: 0;
+  position: absolute;
+  background: rgb(98, 0, 196);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 100%;
 }
 #faqlink:hover
 {
@@ -101,6 +126,18 @@ a{
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
+#schedulelink.in:after{
+    background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 4px;
+  left: 0;
+  position: absolute;
+  background: rgb(98, 0, 196);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 100%;
+}
 #schedulelink:hover
 {
     text-decoration: none;
@@ -131,6 +168,18 @@ a{
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
+#sponsorslink.in:after{
+    background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 4px;
+  left: 0;
+  position: absolute;
+  background: rgb(98, 0, 196);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 100%;
+}
 #sponsorslink:hover
 {
     text-decoration: none;
@@ -160,6 +209,18 @@ a{
   background: rgb(98, 0, 196);
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
+}
+#teamlink.in:after{
+    background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 4px;
+  left: 0;
+  position: absolute;
+  background: rgb(98, 0, 196);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 100%;
 }
 #teamlink:hover
 {
@@ -193,7 +254,7 @@ a{
 #herodate
 {
     color: black;
-    font-size: 50px; 
+    font-size: 40px; 
     text-align: center;
     margin-bottom: 20px;
     font-weight: 100;
