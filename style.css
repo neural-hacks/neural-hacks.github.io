@@ -1,0 +1,439 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Helvetica;
+}
+
+a{
+    cursor: pointer;
+}
+
+#navbar
+{
+    width:100%;
+    position: fixed;
+    background: white;
+}
+
+.col-sm
+{
+    position: initial !important;
+}
+
+#aboutlink{
+    display: inline-block;
+    padding: 0;
+    position: relative;
+    text-transform: none;
+    color:black;
+  }
+
+#aboutlink:after { 
+    background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 4px;
+  left: 0;
+  position: absolute;
+  background: rgb(98, 0, 196);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+#aboutlink:hover
+{
+    text-decoration: none;
+    color: initial;
+}
+
+#aboutlink:hover:after {
+    width:100%;
+}
+
+#faqlink{
+    display: inline-block;
+    padding: 0;
+    position: relative;
+    text-transform: none;
+    color:black;
+  }
+
+#faqlink:after { 
+    background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 4px;
+  left: 0;
+  position: absolute;
+  background: rgb(98, 0, 196);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+#faqlink:hover
+{
+    text-decoration: none;
+    color: initial;
+}
+
+#faqlink:hover:after {
+    width:100%;
+}
+
+#schedulelink{
+    display: inline-block;
+    padding: 0;
+    position: relative;
+    text-transform: none;
+    color:black;
+  }
+
+#schedulelink:after { 
+    background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 4px;
+  left: 0;
+  position: absolute;
+  background: rgb(98, 0, 196);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+#schedulelink:hover
+{
+    text-decoration: none;
+    color: initial;
+}
+
+#schedulelink:hover:after {
+    width:100%;
+}
+
+#sponsorslink{
+    display: inline-block;
+    padding: 0;
+    position: relative;
+    text-transform: none;
+    color:black;
+  }
+
+#sponsorslink:after { 
+    background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 4px;
+  left: 0;
+  position: absolute;
+  background: rgb(98, 0, 196);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+#sponsorslink:hover
+{
+    text-decoration: none;
+    color: initial;
+}
+
+#sponsorslink:hover:after {
+    width:100%;
+}
+
+#teamlink{
+    display: inline-block;
+    padding: 0;
+    position: relative;
+    text-transform: none;
+    color:black;
+  }
+
+#teamlink:after { 
+    background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 4px;
+  left: 0;
+  position: absolute;
+  background: rgb(98, 0, 196);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+#teamlink:hover
+{
+    text-decoration: none;
+    color: initial;
+}
+
+#teamlink:hover:after {
+    width:100%;
+}
+
+
+
+.navitem
+{
+    text-align: center;
+    padding-top:30px;
+    padding-bottom: 10px;
+    font-size: 24px;
+    color:black;
+}
+
+#hero
+{
+    width: 100%;
+    height: 500px;
+    background:  white;
+    display: inline-block;
+}
+
+#herodate
+{
+    color: black;
+    font-size: 50px; 
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 100;
+    
+}
+
+#buttonwrapper
+{
+    display: flex;
+  justify-content: center;
+}
+
+#herobutton
+{
+    color: white;
+    font-size: 25px;
+    padding: 10px 30px;
+    background: rgb(98, 0, 196);
+    border-radius: 30px;
+    font-weight: 200;
+    text-align: center;
+    transition: box-shadow 0.5s;
+
+}
+
+#herobutton:hover
+{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    
+}
+
+#herologo
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 150px;
+    width: 200px;
+}
+
+#herotitle
+{
+    font-size: 100px;
+    text-align: center;
+    color: rgb(98,0,196);
+    margin-top: 10px;
+}
+
+#herotitle span
+{
+ color: black;
+}
+
+#about
+{
+    width: 100%;
+    height: 650px;
+    background:  rgb(98,0,196);
+    margin-top: 100px;
+}
+
+#abouttitle
+{
+    font-size: 50px;
+    padding-top: 125px;
+    padding-left: 100px;
+    color: white;
+    font-weight: bold;
+}
+
+#abouttext
+{
+    font-size: 26px;
+    color: white;
+    width:50%;
+    padding-left: 100px;
+
+
+}
+
+#faq
+{
+    width: 100%;
+    height: 650px;
+    background:  white;
+}
+
+#faqtitle
+{
+    font-size: 50px;
+    text-align: center;
+    padding-top: 125px;
+    color: rgb(98, 0, 196);
+    font-weight: bold;
+}
+
+.faqitem
+{
+    text-align:center;
+
+}
+
+.faqquestion
+{
+    color: rgb(98, 0, 196);
+    font-size: 30px;
+}
+
+.faqanswer
+{
+    color: black;
+    font-size: 18px;
+}
+
+#schedule 
+{
+    width: 100%;
+    height: 750px;
+    background:  rgb(98, 0, 196);
+}
+
+#scheduletitle
+{
+    font-size: 50px;
+    padding-top: 125px;
+    color: white;
+    font-weight: bold;
+    text-align:center;
+}
+
+.timelabel
+{
+    font-size: 30px;
+    color: white;
+    width: 50%;
+    text-align: center;
+    position: relative;
+    margin:0;
+    font-weight: bold;
+}
+.eventlabel
+{
+    font-size: 30px;
+    color: white;
+    width: 50%;
+    float:right;
+    text-align: center;
+    font-weight: bold;
+}
+
+.time
+{
+    font-size: 24px;
+    color: white;
+    width: 50%;
+    text-align: center;
+    position: relative;
+    margin:0;
+}
+.event
+{
+    font-size: 24px;
+    color: white;
+    width: 50%;
+    float:right;
+    text-align: center;
+}
+
+#sponsors
+{
+    width: 100%;
+    height: 650px;
+    background:  white;
+}
+
+#sponsorstitle
+{
+    font-size: 50px;
+    padding-top: 125px;
+    color: rgb(98, 0, 196);
+    font-weight: bold;
+    text-align:center;
+}
+
+#team
+{
+    width: 100%;
+    height: 1250px;
+    background: rgb(98, 0, 196);
+}
+#teamtitle
+{
+    font-size: 50px;
+    padding-top: 125px;
+    color: white;
+    font-weight: bold;
+    text-align:center;
+}
+
+#teamcontainer
+{
+    margin-left:7.5%;
+    margin-right:7.5%;
+}
+
+.teamrow
+{
+    padding-top: 75px;
+}
+
+.teamphoto
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+}
+
+.teamname
+{
+    font-size: 40px;
+    color:white;
+    text-align:center;
+    font-weight: 200;
+    padding-top:20px;
+}
+
+.teamposition
+{
+    font-size: 30px;
+    color: white;
+    font-weight: 200;
+    text-align: center;
+    padding-top: 5px;
+
+}
+
+#footer
+{
+    background: black;
+    height: 125px;
+    width: 100%;
+}
