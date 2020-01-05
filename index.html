@@ -206,7 +206,10 @@
            topOfDiv = $('#about').offset().top;
            if(((scrollAmount + windowHeight) - halfHeight) >= topOfDiv) {
             resetToBlack();
-             $(`<style> #aboutlink:after { background: none repeat scroll 0 0 transparent; bottom: 0; content: ""; display: block; height: 4px; left: 0; position: absolute; background: rgb(98, 0, 196); transition: width 0.3s ease 0s, left 0.3s ease 0s; width: 100%;  }</style>`).appendTo("head");
+            if(!($("#aboutlink").hasClass("in")))
+            {
+                 $("#aboutlink").toggleClass("in");
+            } 
             
          }
          else
@@ -214,25 +217,33 @@
          topOfDiv = $('#faq').offset().top;
            if(((scrollAmount + windowHeight) - halfHeight) >= topOfDiv) {
             resetToBlack();
-            $(`<style> #faqlink:after { background: none repeat scroll 0 0 transparent; bottom: 0; content: ""; display: block; height: 4px; left: 0; position: absolute; background: rgb(98, 0, 196); transition: width 0.3s ease 0s, left 0.3s ease 0s; width: 100%;  }</style>`).appendTo("head");
+            if (!($("#faqlink").hasClass("in"))) {
+                   $("#faqlink").toggleClass("in");
+               } 
              
          }
          topOfDiv = $('#schedule').offset().top;
            if(((scrollAmount + windowHeight) - halfHeight) >= topOfDiv) {
             resetToBlack();
-            $(`<style> #schedulelink:after { background: none repeat scroll 0 0 transparent; bottom: 0; content: ""; display: block; height: 4px; left: 0; position: absolute; background: rgb(98, 0, 196); transition: width 0.3s ease 0s, left 0.3s ease 0s; width: 100%;  }</style>`).appendTo("head");
+            if (!($("#schedulelink").hasClass("in"))) {
+                   $("#schedulelink").toggleClass("in");
+               } 
              
          }
          topOfDiv = $('#sponsors').offset().top;
            if(((scrollAmount + windowHeight) - halfHeight) >= topOfDiv) {
             resetToBlack();
-            $(`<style> #sponsorslink:after { background: none repeat scroll 0 0 transparent; bottom: 0; content: ""; display: block; height: 4px; left: 0; position: absolute; background: rgb(98, 0, 196); transition: width 0.3s ease 0s, left 0.3s ease 0s; width: 100%;  }</style>`).appendTo("head");
+            if (!($("#sponsorslink").hasClass("in"))) {
+                   $("#sponsorslink").toggleClass("in");
+               } 
              
          }
          topOfDiv = $('#team').offset().top;
            if(((scrollAmount + windowHeight) - halfHeight) >= topOfDiv) {
             resetToBlack();
-            $(`<style> #teamlink:after { background: none repeat scroll 0 0 transparent; bottom: 0; content: ""; display: block; height: 4px; left: 0; position: absolute; background: rgb(98, 0, 196); transition: width 0.3s ease 0s, left 0.3s ease 0s; width: 100%;  }</style>`).appendTo("head");
+            if (!($("#teamlink").hasClass("in"))) {
+                   $("#teamlink").toggleClass("in");
+               } 
              
          }
          
@@ -240,11 +251,11 @@
 
        function resetToBlack()
        {
-        $(`<style> #aboutlink:after { background: none repeat scroll 0 0 transparent; bottom: 0; content: ""; display: block; height: 4px; left: 0; position: absolute; background: rgb(98, 0, 196); transition: width 0.3s ease 0s, left 0.3s ease 0s; width: 0;  }</style>`).appendTo("head");
-        $(`<style> #faqlink:after { background: none repeat scroll 0 0 transparent; bottom: 0; content: ""; display: block; height: 4px; left: 0; position: absolute; background: rgb(98, 0, 196); transition: width 0.3s ease 0s, left 0.3s ease 0s; width: 0;  }</style>`).appendTo("head");
-        $(`<style> #schedulelink:after { background: none repeat scroll 0 0 transparent; bottom: 0; content: ""; display: block; height: 4px; left: 0; position: absolute; background: rgb(98, 0, 196); transition: width 0.3s ease 0s, left 0.3s ease 0s; width: 0;  }</style>`).appendTo("head");
-        $(`<style> #sponsorslink:after { background: none repeat scroll 0 0 transparent; bottom: 0; content: ""; display: block; height: 4px; left: 0; position: absolute; background: rgb(98, 0, 196); transition: width 0.3s ease 0s, left 0.3s ease 0s; width: 0;  }</style>`).appendTo("head");
-        $(`<style> #teamlink:after { background: none repeat scroll 0 0 transparent; bottom: 0; content: ""; display: block; height: 4px; left: 0; position: absolute; background: rgb(98, 0, 196); transition: width 0.3s ease 0s, left 0.3s ease 0s; width: 0;  }</style>`).appendTo("head");
+        $("#aboutlink").removeClass("in");
+        $("#faqlink").removeClass("in");
+        $("#schedulelink").removeClass("in");
+        $("#sponsorslink").removeClass("in");
+        $("#teamlink").removeClass("in");
        }
        </script>
 </body>
